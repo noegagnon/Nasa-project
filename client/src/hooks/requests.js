@@ -1,11 +1,10 @@
-const API_URL = 'http:/localhost:8000';
+const API_URL = 'http://localhost:8000';
+
+// TODO: Once API is ready.
+// Load planets and return as JSON.
 async function httpGetPlanets() {
-  console.log('api url',API_URL);
   const response = await fetch(`${API_URL}/planets`);
-  console.log('response',response);
-  return await response.json(); //json return a promise, so we await
-  // TODO: Once API is ready.
-  // Load planets and return as JSON.
+  return await response.json();
 }
 
 async function httpGetLaunches() {
@@ -19,7 +18,7 @@ async function httpSubmitLaunch(launch) {
 }
 
 async function httpAbortLaunch(id) {
-  // TODO: Once API is ready.
+  // TODO: Once API is ready. 
   // Delete launch with given ID.
 }
 
